@@ -92,8 +92,8 @@ else:
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'dscatc',
-            'USER': 'harsh',
-            'PASSWORD': '1234',
+            'USER': 'name',
+            'PASSWORD': '',
             'HOST': 'localhost',
             'PORT': '',
         }
