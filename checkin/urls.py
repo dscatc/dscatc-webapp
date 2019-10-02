@@ -19,4 +19,5 @@ from . import views
 
 urlpatterns = [
     path('', views.check_in),
+    path('checkinGen', views.checkinGen),
 ]
