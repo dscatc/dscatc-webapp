@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+from checkin import views as checkinViews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
     path('checkin/', views.checkin),
+    path('checkin/checkinGen', checkinViews.checkinGen),
 ]

@@ -8,9 +8,13 @@
 <h3>Send the spreadsheet to this email</h3>
 <p>harshborse@checkin-254617.iam.gserviceaccount.com</p>
 
-<form>
-    "exact name of the spreadsheet = <input type="text">
+<form action="checkinGen" method="post">
+    {% csrf_token %}
+    "exact name of the spreadsheet = <input type="text" name="filename">
     <input type="submit">
+
+    <p>after submitting look at the console</p>
+    <p>don't forget to say jay mata di</p>
 </form>
 </body>
 </html>
