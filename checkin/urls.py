@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
-from portal.urls import urlpatterns
+# from portal.urls import urlpatterns
 
-urlpatterns += [
-    path('checkGen/', views.checkinGen),
-    path('checkin/checkinGen', views.checkinGen, name = "checkinGen"),
+urlpatterns = [
+    path('', views.check_in),
+    path('checkinGen', views.checkinGen, name = "checkinGen"),
 
 ]
