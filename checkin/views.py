@@ -38,3 +38,4 @@ def checkinGen(request):
     print("\n\n END")
     print("____________________________________________________________________________________________________\n\n\n")
     return redirect('/checkin')
+
