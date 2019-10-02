@@ -10,14 +10,17 @@ def check_in(request):
     else:
         return render(request, 'check_in.html', {})
 
+jsonDic = {
 
+}
 def checkinGen(request):
     scope = ["https://spreadsheets.google.com/feeds", 'https://www.googleapis.com/auth/spreadsheets',
              "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
     print("\n\n\n____________________________________________________________________________________________________")
     print("checkin gen")
     print("START\n\n")
-    creds = ServiceAccountCredentials.from_json_keyfile_name("checkin/checkin-creds.json", scope)
+    # creds = ServiceAccountCredentials.from_json_keyfile_name("checkin/checkin-creds.json", scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_dict(jsonDic, scope)
     client = gspread.authorize(creds)
     filename = request.POST['filename']
     sheet = client.open(filename).sheet1 # Open the spreadhseet
