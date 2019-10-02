@@ -44,7 +44,11 @@ Obviously this is not the only method, there are other ways to do this so try se
 
 Now this command will install Virtual environment in that present directory (dscatc-webapp). Now assuming that you have myvenv folder so we need to activate it. Activation is used to activate that partiuclar environment for present session. So to do that:
 
+for linux
 `source myvenv/bin/activate`
+
+for windows
+`myvenv\Scripts\activate`
 
 Note: Your virtualenv file must be `myvenv`.
 
