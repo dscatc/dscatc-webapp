@@ -17,5 +17,6 @@ db.sqlite3
 *.pyc
 pyenv
 myvenv
+venv
 .env
 .vscode
