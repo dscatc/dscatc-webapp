@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+# <<<<<<< master
 # from portal.urls import urlpatterns
 
 urlpatterns = [
@@ -23,3 +24,9 @@ urlpatterns = [
     path('checkinGen', views.checkinGen, name = "checkinGen"),
 
 ]
+# =======
+
+# urlpatterns = [
+#     path('', views.check_in),
+# ]
+# >>>>>>> master

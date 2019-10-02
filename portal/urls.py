@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from . import views
+# <<<<<<< master
 # <<<<<<< harshborse
 from checkin import views as checkinViews
 
@@ -26,9 +27,15 @@ from checkin import views as checkinViews
 #     path('checkin/checkinGen', checkinViews.checkinGen),
 # =======
 
+# =======
+ 
+# >>>>>>> master
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home),
     path('checkin/', include('checkin.urls'))
+# <<<<<<< master
+# # >>>>>>> master
+# =======
 # >>>>>>> master
 ]

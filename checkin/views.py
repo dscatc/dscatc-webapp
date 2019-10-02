@@ -1,3 +1,4 @@
+# <<<<<<< master
 # <<<<<<< harshborse
 from django.shortcuts import render, redirect
 
@@ -56,13 +57,19 @@ def checkinGen(request):
     print("____________________________________________________________________________________________________\n\n\n")
     return redirect('/checkin')
 # =======
+# =======
+# >>>>>>> master
 from django.shortcuts import render
 
 # Create your views here.
 # render check in view.
 def check_in(request):
+# <<<<<<< master
     if request == 'POST':
       checkinGen(request)
     else:
       return render(request, 'check_in.html', {})
+# >>>>>>> master
+# =======
+#     return render(request, 'check_in.html', {})
 # >>>>>>> master
