@@ -8,5 +8,17 @@
         <p>
             "Hello ATC"
         </p>
+    <h3>Send the spreadsheet to this email</h3>
+    <p>**email id which is genrated by GoogleAPI**</p>
+    <!-- this email id canbe found in the checkin-creds.json-->
+
+    <form action="checkinGen" method="post">
+        {% csrf_token %}
+        "exact name of the spreadsheet = <input type="text" name="filename">
+        <input type="submit">
+
+        <p>after submitting look at the console</p>
+        <p>don't forget to say jay mata di</p>
+    </form>
     </body>
 </html>
